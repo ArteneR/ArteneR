@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.less', './header.component.mobile.less']
 })
 export class HeaderComponent implements OnInit {
+    isNavigationVisible = true;
 
-  constructor() { }
+    constructor() { }
 
-  ngOnInit() {
-  }
+    ngOnInit() {
+    }
+    
+    triggerNavigation(): void {
+        this.isNavigationVisible = !this.isNavigationVisible;
+    }
+    
+    onResize(event) {
+        this.isNavigationVisible = true;
+    }
 
 }

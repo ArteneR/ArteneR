@@ -1,7 +1,7 @@
 <header>
     <div id="header-corner-mask"></div>
-    <div id="header-inner">
-        <nav>
+    <div id="header-inner" (window:resize)="onResize($event)">
+        <nav *ngIf="isNavigationVisible">
             <ul>
                 <li>Home</li>
                 <li>About me</li>
@@ -11,8 +11,8 @@
                 <li>Contact</li>
             </ul>
         </nav>
-        <div id="header-navigation-burger-btn">
-            <div id="nav-icon" ng-class="{'open': false}">
+        <div id="header-navigation-burger-btn" (click)="triggerNavigation()">
+            <div id="nav-icon" [class.open]="isNavigationVisible">
                 <span></span>
                 <span></span>
                 <span></span>
