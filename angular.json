@@ -24,6 +24,7 @@
             ],
             "styles": [
               "src/styles/reset.less",
+              "node_modules/font-awesome/css/font-awesome.css",
               "src/styles/fonts.less",
               "src/styles/variables.less",
               "src/styles/styles.less"
