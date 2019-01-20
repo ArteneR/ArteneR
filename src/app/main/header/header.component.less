@@ -1,0 +1,49 @@
+@import "variables";
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+}
+
+#header-inner {
+    background-color: #7E9C8E;
+    height: 50px;
+    padding: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#header-corner-mask { 
+    width: 0; 
+    height: 0; 
+    border-top: 50px solid #7E9C8E; 
+    border-left: 200px solid transparent;
+}
+
+nav {
+    color: @font-color-light;
+    text-transform: uppercase;
+    font-size: @font-size-normal;
+    font-family: @font-family-primary-regular;
+}
+
+nav ul {
+    
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background-color: #8BA99B;
+}
+
+#header-navigation-burger-btn {
+    display: none;
+}

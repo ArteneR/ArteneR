@@ -1,0 +1,10 @@
+
+Fonts:
+
+@font-family-primary-regular                ->      MYRIADPRO-REGULAR
+@font-family-primary-condensed              ->      MYRIADPRO-CONDENSED
+
+@font-family-secondary-regular              ->      TwCenMT-Regular
+@font-family-secondary-bold                 ->      TwCenMT-Bold
+@font-family-secondary-condensed            ->      TwCenMT-Condensed
+@font-family-secondary-condensed-extra-bold ->      TwCenMT-CondensedExtraBold

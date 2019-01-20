@@ -23,9 +23,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles/reset.less",
+              "src/styles/fonts.less",
+              "src/styles/variables.less",
+              "src/styles/styles.less"
             ],
-            "scripts": []
+            "scripts": [],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "./src/styles"              
+              ]
+            }
           },
           "configurations": {
             "production": {
