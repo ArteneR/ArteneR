@@ -16,6 +16,8 @@
 
 #banner-image img {
     width: 100%;
+    height: 315px;
+    object-fit: cover;
 }
 
 #banner-main-info {
@@ -41,6 +43,33 @@
 
 #banner-avatar img {
     width: 154px;
+}
+
+#banner-fullname {
+    position: absolute;
+    top: -52px;
+    left: 280px;
+}
+
+#banner-fullname * {
+    color: @font-color-light;
+    font-family: @font-family-primary-condensed;
+    font-size: @font-size-largest-3x;
+}
+
+#banner-proffession {
+    position: absolute;
+    top: 0px;
+    left: 280px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#banner-proffession * {
+    color: @color-primary-darker-2x;
+    font-family: @font-family-secondary-condensed-extra-bold;
+    font-size: @font-size-largest-3x;
+    white-space: nowrap;
 }
 
 #banner-contact-info {

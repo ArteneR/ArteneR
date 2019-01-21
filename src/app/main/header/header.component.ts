@@ -7,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
     isNavigationVisible = true;
+    currentWindowWidth = null;
 
     constructor() { }
 
     ngOnInit() {
+        this.currentWindowWidth = window.innerWidth;
+        if (this.currentWindowWidth <= 600) {
+            this.isNavigationVisible = false;
+        }
     }
     
     triggerNavigation(): void {
@@ -18,7 +23,10 @@ export class HeaderComponent implements OnInit {
     }
     
     onResize(event) {
-        this.isNavigationVisible = true;
+        if (event.target.innerWidth != this.currentWindowWidth) {
+            this.isNavigationVisible = true;
+        }
+        this.currentWindowWidth = event.target.innerWidth;
     }
 
 }

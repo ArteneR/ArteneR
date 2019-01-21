@@ -7,6 +7,10 @@ header {
     position: relative;
 }
 
+header * {
+    color: @font-color-light;
+}
+
 #header-inner {
     background-color: @color-primary-normal;
     height: 50px;
@@ -28,6 +32,7 @@ nav {
     text-transform: uppercase;
     font-size: @font-size-normal;
     font-family: @font-family-primary-regular;
+    z-index: 1000;
 }
 
 nav ul {
