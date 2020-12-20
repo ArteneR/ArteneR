@@ -16,7 +16,8 @@ export class MyWorksComponent implements OnInit {
 
     ngOnInit() {
             var project1_data = {
-                    'title': "My Portofolio website",
+                    'title': "Edenhaus.ro",
+                    'projectLink': "https://edenhaus.ro",
                     'year': "2018",
                     'projectFolder': "01",
                     'description': `What I enjoy the most is building from scratch a software product, 
@@ -28,6 +29,7 @@ export class MyWorksComponent implements OnInit {
             };
             var project2_data = {
                     'title': "My Portofolio website",
+                    'projectLink': "https://artener.ro",
                     'year': "2019",
                     'projectFolder': "02",
                     'description': `What I enjoy the most is building from scratch a software product, 
@@ -39,6 +41,7 @@ export class MyWorksComponent implements OnInit {
             };
 
             var project1 = new Project(project1_data['title'],
+                                       project1_data['projectLink'],
                                        project1_data['year'],
                                        project1_data['projectFolder'],
                                        project1_data['description'],
@@ -47,6 +50,7 @@ export class MyWorksComponent implements OnInit {
                                        project1_data['descriptionOnLeftSide']);
 
             var project2 = new Project(project2_data['title'],
+                                       project2_data['projectLink'],
                                        project2_data['year'],
                                        project2_data['projectFolder'],
                                        project2_data['description'],
