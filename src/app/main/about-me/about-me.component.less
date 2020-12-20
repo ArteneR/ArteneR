@@ -1,4 +1,78 @@
+@import "variables";
+
 #about-me {
-    /*background-color: yellow;*/
-    min-height: 200px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#short-description {
+    flex: 1;
+    padding: 0px 10%;
+    text-align: justify;
+}
+
+#short-description-title {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+#short-description-title h1 {
+    line-height: 80%;
+    font-family: @font-family-secondary-condensed-extra-bold;
+    font-size: @font-size-largest-4x;
+    color: @color-primary-darkest;
+    text-transform: uppercase;
+}
+
+#short-description-title h2 {
+    line-height: 80%;
+    font-family: @font-family-secondary-condensed;
+    font-size: @font-size-largest-4x;
+    color: @color-primary-darker-2x;
+    text-transform: uppercase;
+}
+
+#short-description p {
+    font-size: @font-size-large;
+    margin-top: 10px;
+}
+
+#personal-data {
+    flex: 1;
+    padding: 0px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#personal-data h3 {
+    margin-left: 50px !important;
+    align-self: flex-start;
+    font-family: @font-family-secondary-condensed;
+    font-size: @font-size-largest-3x;
+    color: @color-primary-darker-2x;
+    text-transform: uppercase;
+}
+
+#personal-data table {
+    margin-top: 10px;
+}
+
+#personal-data table td:first-child {
+    font-family: @font-family-secondary-bold;
+    font-size: @font-size-larger;
+    color: @color-primary-darkest;
+    text-transform: uppercase;
+    text-align: right;
+    padding-right: 30px;
+}
+
+#personal-data table td:last-child {
+    font-size: @font-size-larger;
 }

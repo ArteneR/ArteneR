@@ -1,3 +1,7 @@
+<app-section-title title="Education & Career"></app-section-title>
+
 <section id="education-and-career">
-    <div style="background-color: #497975; color: #FFFFFF; padding: 10px; display: inline-block;">Education & Career</div>
+    <div id="edu-and-career-timeline-fade-top"></div>
+    <app-edu-and-career-item *ngFor="let eduAndCareerItem of eduAndCareerItems" [eduAndCareerItem]="eduAndCareerItem"></app-edu-and-career-item>
+    <div id="edu-and-career-timeline-fade-bottom"></div>
 </section>

@@ -14,13 +14,38 @@
         top: 50px;
         right: 0;
         left: 0;
-        background-color: #7E9C8E;
+        background: rgba(34, 34, 34, 0.85);
+        border-bottom: 3px solid rgba(126, 156, 142, 0.45);
+    }
+    
+    nav * {
+        font-size: @font-size-large;
     }
 
+    #nav-top-ornament {
+        background-color: @color-primary-normal;
+        width: 50px;
+        height: 10px;
+        position: absolute;
+        top: -10px;
+        left: 0;
+        opacity: 0.85;
+    }
+    
+    #nav-top-ornament-corner-mask {
+        width: 0; 
+        height: 0; 
+        border-bottom: 10px solid @color-primary-normal; 
+        border-right: 40px solid transparent;
+        position: absolute;
+        top: -10px; left: 50px;
+        opacity: 0.85;
+    }
+    
     nav ul li {
         display: block;
-        padding: 10px 20px;
-        border-bottom: 1px solid #799789;
+        padding: 15px 25px;
+        border-bottom: 1px solid rgba(126, 156, 142, 0.45);     /* #799789 in rgb */
     }
     
     

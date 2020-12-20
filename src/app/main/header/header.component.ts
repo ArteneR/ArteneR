@@ -22,6 +22,12 @@ export class HeaderComponent implements OnInit {
         this.isNavigationVisible = !this.isNavigationVisible;
     }
     
+    closeNavigation(): void {
+        if (this.currentWindowWidth <= 600) {
+            this.isNavigationVisible = false;
+        }
+    }
+    
     onResize(event) {
         if (event.target.innerWidth != this.currentWindowWidth) {
             this.isNavigationVisible = true;

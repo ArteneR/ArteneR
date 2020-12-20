@@ -1,3 +1,5 @@
+<app-section-title title="My Works"></app-section-title>
+    
 <section id="my-works">
-    <div style="background-color: #497975; color: #FFFFFF; padding: 10px; display: inline-block;">My Works</div>
+    <app-project *ngFor="let project of projects" [project]="project"></app-project>
 </section>

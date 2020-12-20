@@ -2,13 +2,15 @@
     <div id="header-corner-mask"></div>
     <div id="header-inner" (window:resize)="onResize($event)">
         <nav *ngIf="isNavigationVisible">
+            <span id="nav-top-ornament"></span>
+            <span id="nav-top-ornament-corner-mask"></span>
             <ul>
-                <li>Home</li>
-                <li>About me</li>
-                <li>My Skills</li>
-                <li>My Works</li>
-                <li>Education & Career</li>
-                <li>Contact</li>
+                <li [scrollTo]="'#top-banner'" (click)="closeNavigation()">Home</li>
+                <li [scrollTo]="'#about-me'" (click)="closeNavigation()" [scrollOffset]="-150">About me</li>
+                <li [scrollTo]="'#my-skills'" (click)="closeNavigation()" [scrollOffset]="-50">My Skills</li>
+                <li [scrollTo]="'#my-works'" (click)="closeNavigation()" [scrollOffset]="-150">My Works</li>
+                <li [scrollTo]="'#education-and-career'" (click)="closeNavigation()" [scrollOffset]="-150">Education & Career</li>
+                <li [scrollTo]="'#contact'" (click)="closeNavigation()" [scrollOffset]="-50">Contact</li>
             </ul>
         </nav>
         <div id="header-navigation-burger-btn" (click)="triggerNavigation()">
