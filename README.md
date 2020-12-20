@@ -42,12 +42,14 @@ Heroku configuration:
 
 - Make sure you have latest version of angular cli and angular compiler:
     npm install @angular/cli@latest @angular/compiler-cli --save-dev
+    (npm install @angular/cli@~10.2.0 @angular/compiler-cli --save-dev) - In case above command gives error
 
 
 
-- In your package.json, copy:
+- In your package.json, copy the following:
     "@angular/cli”: “1.4.9”,
     "@angular/compiler-cli": "^4.4.6",
+    "typescript": "~4.0.2",
     from devDependencies to dependencies
 
 
@@ -65,11 +67,6 @@ Heroku configuration:
         "npm": "3.10.10"
     }
     (replace versions with yours: node -v, npm -v)
-
-
-
-- Copy typescript from devDependencies to dependencies:
-    "typescript": "~4.0.2"
 
 
 
