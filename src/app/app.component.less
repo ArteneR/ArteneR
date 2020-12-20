@@ -1,0 +1,35 @@
+@import "variables";
+
+#app-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#background-header-line {
+    background-color: @color-primary-normal;
+    width: 50%;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+}
+
+#background-line {
+    background-color: @color-primary-normal;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    z-index: 5;
+}
+
+main {
+    background-color: @color-page-background;
+    flex: 1;
+}
+
+footer {
+    background-color: @color-primary-normal;
+}

@@ -1,0 +1,29 @@
+@import "variables";
+@import "font-awesome/css/font-awesome.css";
+
+* {
+    font-family: @font-family-primary-regular;
+    font-size: @font-size-normal;
+    color: @font-color-dark;
+}
+
+body {
+    background-color: @color-primary-darker;
+}
+
+.art-button {
+    background-color: @color-primary-darker-2x;
+    padding: 8px 30px;
+    color: @font-color-light;
+    border-width: 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    animation-name: animation-button-on-hover-exit-1;
+    animation-duration: 0.5s;
+}
+
+.art-button:hover {
+    background-color: @color-primary-darker;
+    animation-name: animation-button-on-hover-1;
+    animation-duration: 0.5s;
+}

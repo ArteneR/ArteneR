@@ -1,0 +1,31 @@
+@import "variables";
+
+@media all and (max-width: @screen-size-mobile-max) {
+    .section-title {
+        height: 50px;
+        left: -5px;
+    }
+    
+    .section-title-text {
+        font-size: @font-size-largest;
+        padding: 10px 20px; 
+    }
+    
+    .section-title-arrow-right {
+        border-top: 25px solid transparent; 
+        border-left: 50px solid @color-primary-darker-2x; 
+        border-bottom: 25px solid transparent;
+    }
+    
+    .section-title-arrow-left {
+        top: 50px;
+        border-left: 5px solid transparent; 
+        border-top: 5px solid @color-primary-darkest;
+    }
+    
+    .section-title-line {
+        top: 25px;
+        margin-right: 5px;
+        background-color: @color-accent-light;
+    }
+}

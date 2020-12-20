@@ -1,0 +1,134 @@
+@import "variables";
+
+.project-container {
+    /*background-color: grey;*/
+    width: 100%;
+    min-height: 200px;
+    padding: 50px;
+}
+
+.project-inner {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 100px;
+    border-bottom: 1px solid @color-accent-light;
+}
+
+.project-description-mobile-only {
+    display: none;
+}
+
+
+/**********  Project Photo  **********/
+
+.project-photo {
+    height: 100%;
+    flex: 1;
+    margin: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid @color-accent-light;
+}
+
+.project-photo img {
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.stick-to-left {
+    order: 2;
+}
+
+.project-photo-title {
+    background-color: @color-primary-normal;
+    color: @font-color-light;
+    font-size: @font-size-large;
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.project-photo-year {
+    background-color: @color-primary-normal;
+    color: @font-color-light;
+    font-size: @font-size-large;
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+
+/**********  Project info  **********/
+
+.project-info {
+    flex: 1;
+    margin: 0px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-description h2,
+.project-description-mobile-only h2 {
+    align-self: center;
+    margin-top: 20px;
+    font-size: @font-size-larger;
+    text-decoration: underline;
+}
+
+.project-description p,
+.project-description-mobile-only p {
+    margin-top: 20px;
+    font-size: @font-size-large;
+}
+
+.project-description h3,
+.project-description-mobile-only h3 {
+    margin-top: 10px;
+    font-size: @font-size-larger;
+}
+
+.project-technologies-tools-used {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: @technology-badge-size / 3;
+    margin-top: @technology-badge-size / 3;
+}
+
+
+/**********  Project other photos  **********/
+
+.project-other-photos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.project-other-photos div {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border: 1px solid @color-accent-light;
+}
+
+.project-other-photos div img {
+    height: 100px;
+    width: 95%;
+    object-fit: cover;
+}
+
+

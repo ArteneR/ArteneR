@@ -1,0 +1,76 @@
+/* Sizes */
+@page-width: 1050px;
+
+@screen-size-mobile-max: 600px;
+@screen-size-tablet-max: @page-width;
+
+@technology-badge-size: 39px;
+
+
+/* Colors */
+@color-primary-darkest: #22524B;
+@color-primary-darker-2x: #4E7874;
+@color-primary-darker: #799789;
+@color-primary-normal: #7E9C8E;
+@color-primary-lighter: #83A193;
+@color-primary-lighter-2x: #95B5A5;
+
+@color-secondary-normal: #DCF7F1;
+@color-secondary-lighter: #F2FDFA;
+
+@color-page-background: #F2FDFA;
+@color-page-foreground: #FFFFFF;
+
+@color-accent-light: #E5E5E5;
+
+
+/* Fonts */
+@font-color-light: #EEEEEE;
+@font-color-dark: #111111;
+@font-color-primary: #497975;
+
+@font-family-primary-regular: 'myriad-pro-regular', 'arial', 'sans-serif';
+@font-family-primary-condensed: 'myriad-pro-condensed', 'arial', 'sans-serif';
+@font-family-secondary-regular: 'tw-cen-mt-regular', 'arial', 'sans-serif';
+@font-family-secondary-bold: 'tw-cen-mt-bold', 'arial', 'sans-serif';
+@font-family-secondary-condensed: 'tw-cen-mt-condensed', 'arial', 'sans-serif';
+@font-family-secondary-condensed-extra-bold: 'tw-cen-mt-condensed-extra-bold', 'arial', 'sans-serif';
+
+@font-size-smaller: 8px;
+@font-size-small: 10px;
+@font-size-normal: 12px;
+@font-size-large: 16px;
+@font-size-larger: 18px;
+@font-size-largest: 24px;
+@font-size-largest-2x: 32px;
+@font-size-largest-3x: 40px;
+@font-size-largest-4x: 74px;
+
+
+
+/* Animations */
+.keyframes(@name, @rules) {
+    @-webkit-keyframes @name { @rules(); }
+    @-moz-keyframes @name { @rules(); }
+    @-ms-keyframes @name { @rules(); }
+    @-o-keyframes @name { @rules(); }
+    @keyframes @name { @rules(); }
+}
+
+
+/* Buttons animations */
+.keyframes('animation-button-on-hover-1', {
+    from {background-color: @color-primary-darker-2x;}
+    to {background-color: @color-primary-darker;}
+});
+
+.keyframes('animation-button-on-hover-exit-1', {
+    from {background-color: @color-primary-darker;}
+    to {background-color: @color-primary-darker-2x;}
+});
+
+
+
+/* Other elements animations */
+@animation-on-hover-1: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+@animation-on-hover-2: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
