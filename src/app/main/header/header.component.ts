@@ -21,6 +21,11 @@ export class HeaderComponent implements OnInit {
     triggerNavigation(): void {
         this.isNavigationVisible = !this.isNavigationVisible;
     }
+
+    navigateTo(elementId): void {
+        this.scrollTo(elementId);
+        this.closeNavigation();
+    }
     
     closeNavigation(): void {
         if (this.currentWindowWidth <= 600) {
@@ -35,7 +40,7 @@ export class HeaderComponent implements OnInit {
         this.currentWindowWidth = event.target.innerWidth;
     }
 
-    scroll(elementId) {
+    scrollTo(elementId) {
         let element = document.getElementById(elementId);
         var offset = 160;
         var elementPosition = element.getBoundingClientRect().top;

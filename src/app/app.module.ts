@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ScrollToModule } from 'ng2-scroll-to-el';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
@@ -39,8 +38,7 @@ import { EduAndCareerItemComponent } from './main/education-and-career/edu-and-c
     EduAndCareerItemComponent
   ],
   imports: [
-    BrowserModule,
-    ScrollToModule.forRoot()
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
