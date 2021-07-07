@@ -102,14 +102,23 @@
 
 #banner-contact-info {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
     background-color: @color-page-foreground;
+    padding-right: 0px 20px;
 }
 
 #banner-contact-info * {
     font-size: @font-size-larger;
 }
 
-#banner-contact-info span {
-    margin: 0 15px 0 8px;
+#banner-contact-info table tr td {
+    padding: 3px 7px;
+}
+
+#banner-contact-info table tr td:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
