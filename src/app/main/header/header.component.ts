@@ -35,4 +35,16 @@ export class HeaderComponent implements OnInit {
         this.currentWindowWidth = event.target.innerWidth;
     }
 
+    scroll(elementId) {
+        let element = document.getElementById(elementId);
+        var offset = 160;
+        var elementPosition = element.getBoundingClientRect().top;
+        var offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
+        });
+    }
+
 }

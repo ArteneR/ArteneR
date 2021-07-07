@@ -5,12 +5,24 @@
             <span id="nav-top-ornament"></span>
             <span id="nav-top-ornament-corner-mask"></span>
             <ul>
-                <li [scrollTo]="'#top-banner'"           (click)="closeNavigation()" [scrollDuration]="200" [scrollOffset]="0">Home</li> 
-                <li [scrollTo]="'#about-me'"             (click)="closeNavigation()" [scrollDuration]="200" [scrollOffset]="-150" >About me</li>
-                <li [scrollTo]="'#my-skills'"            (click)="closeNavigation()" [scrollDuration]="300" [scrollOffset]="-50">My Skills</li>
-                <li [scrollTo]="'#my-works'"             (click)="closeNavigation()" [scrollDuration]="300" [scrollOffset]="-150">My Works</li>
-                <li [scrollTo]="'#education-and-career'" (click)="closeNavigation()" [scrollDuration]="400" [scrollOffset]="-150">Education & Career</li>
-                <li [scrollTo]="'#contact'"              (click)="closeNavigation()" [scrollDuration]="400" [scrollOffset]="-50">Contact</li>
+                <li (click)="scroll('top-banner') && closeNavigation()">
+                    Home
+                </li> 
+                <li (click)="scroll('about-me') && closeNavigation()">
+                    About me
+                </li>
+                <li (click)="scroll('my-skills') && closeNavigation()">
+                    My Skills
+                </li>
+                <li (click)="scroll('my-works') && closeNavigation()">
+                    My Works
+                </li>
+                <li (click)="scroll('education-and-career') && closeNavigation()">
+                    Education & Career
+                </li>
+                <li (click)="scroll('contact') && closeNavigation()">
+                    Contact
+                </li>
             </ul>
         </nav>
         <div id="header-navigation-burger-btn" (click)="triggerNavigation()">
