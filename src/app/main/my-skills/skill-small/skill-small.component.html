@@ -1,5 +1,7 @@
 <div class="skill-small-container">
     <div class="skill-small-badge">
+        <circle-progress class="__desktop-only" [percent]="knowledge_perc" [radius]="60" [outerStrokeWidth]="7" [innerStrokeWidth]="7" [space]="-7"></circle-progress>
+        <circle-progress class="__mobile-only"  [percent]="knowledge_perc" [radius]="40" [outerStrokeWidth]="6" [innerStrokeWidth]="6" [space]="-6"></circle-progress>
         <div class="skill-small-badge-inner">
             <img src="assets/images/skills-icons/{{ image }}">
         </div>
