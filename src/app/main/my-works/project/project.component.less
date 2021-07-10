@@ -29,13 +29,18 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    border: 1px solid @color-accent-light;
+    border: 2px solid @color-accent-light;
+}
+
+.project-photo:hover {
+    border-color: @color-primary-normal;
 }
 
 .project-photo img {
     width: 400px;
     height: 350px;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .stick-to-left {
@@ -122,13 +127,23 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    border: 1px solid @color-accent-light;
+    border: 2px solid @color-accent-light;
+    margin-right: 7px; 
+}
+
+.project-other-photos div:last-child {
+    margin-right: 0;
+}
+
+.project-other-photos div:hover {
+    border-color: @color-primary-normal;
 }
 
 .project-other-photos div img {
     height: 100px;
     width: 95%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 
