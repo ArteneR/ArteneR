@@ -11,12 +11,11 @@
 .skill-badge {
     width: 200px;
     height: 200px;
-    background-color: @color-primary-darker-2x;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: @animation-on-hover-1;
+    position: relative;
 }
 
 .skill-container:hover .skill-badge {
@@ -26,11 +25,11 @@
 .skill-badge-inner {
     width: 90%;
     height: 90%;
-    background-color: @color-page-background;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    margin: auto;
 }
 
 .skill-badge-inner img {

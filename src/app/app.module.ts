@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { NgCircleProgressModule } from 'ng-circle-progress';
+
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
@@ -38,7 +40,29 @@ import { EduAndCareerItemComponent } from './main/education-and-career/edu-and-c
     EduAndCareerItemComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgCircleProgressModule.forRoot({
+        percent: 100,
+        radius: 90,
+        space: -10,
+        outerStrokeGradient: true,
+        outerStrokeWidth: 10,
+        outerStrokeColor: "#4E7874",
+        outerStrokeGradientStopColor: "#7E9C8E",
+        innerStrokeColor: "#e7e8ea",
+        innerStrokeWidth: 10,
+        animateTitle: false,
+        animationDuration: 1000,
+        showUnits: false,
+        showBackground: true,
+        backgroundColor: "#F2FDFA",
+        backgroundPadding: 0,
+        clockwise: false,
+        startFromZero: false,
+        lazy: false,
+        showTitle: false,
+        showSubtitle: false
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

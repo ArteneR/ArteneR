@@ -27,3 +27,34 @@ body {
     animation-name: animation-button-on-hover-1;
     animation-duration: 0.5s;
 }
+
+
+/* Mobile & Desktop show/hide */
+.__mobile-only {
+    display: initial;
+}
+
+.__desktop-only {
+    display: initial;
+}
+
+
+
+/* Mobile */
+@media all and (max-width: @screen-size-mobile-max) {
+    .__desktop-only {
+        display: none !important;
+    }
+
+    .page-content {
+        margin: 0 15px;
+    }
+}
+
+
+/* Desktop */
+@media all and (min-width: @screen-size-mobile-max) {
+    .__mobile-only {
+        display: none !important;
+    }
+}
