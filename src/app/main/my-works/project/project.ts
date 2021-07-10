@@ -14,10 +14,16 @@ export class Project {
                 public technologiesUsed: string[],
                 public descriptionOnLeftSide: boolean) {
                 
+            this.initProjectMainPhoto();
+            this.initProjectOtherPhotos();
+            this.initProjectImages();
+    }
+
+
+    initProjectMainPhoto(): void {
             this.mainImage = ((this.images !== undefined) && (this.images[0] !== undefined)) ?
                                             this.projectsFolder + "/" + this.projectFolder + "/" + this.images[0] :
                                             this.defaultPhoto;
-            this.initProjectOtherPhotos();
     }
     
     
@@ -33,5 +39,9 @@ export class Project {
             this.projectOtherPhotos[2] = ((this.images !== undefined) && (this.images[3] !== undefined)) ?
                                             this.projectsFolder + "/" + this.projectFolder + "/" + this.images[3] :
                                             this.defaultPhoto;
+    }
+
+    initProjectImages(): void {
+            this.images = this.images.map(image => this.projectsFolder + "/" + this.projectFolder + "/" + image);
     }
 }

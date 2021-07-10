@@ -20,7 +20,7 @@ export class MyWorksComponent implements OnInit {
                     'projectLink': "https://edenhaus.ro",
                     'year': "2018",
                     'projectFolder': "01",
-                    'description': `An Single Page Application for displaying properties which are for sale or for rent. Made from scratch in 
+                    'description': `A Single Page Application for displaying properties which are for sale or for rent. Made from scratch in 
                                     AngularJS and PHP, design of the website being made entirely by me as well. It also has a 
                                     comprehensive Admin panel to allow the administrator to easily add and edit properties.`,
                     'images': ['01.jpg', '02.jpg', '03.jpg', '04.jpg', '05.jpg', '06.jpg', '07.jpg'],

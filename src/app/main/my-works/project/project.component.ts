@@ -19,10 +19,7 @@ export class ProjectComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.images = [].concat(
-            { image: this.project.mainImage }, 
-            this.project.projectOtherPhotos.map(image => ({image: image}))
-        );
+        this.images = this.project.images.map(image => ({image: image}));
     }
 
     openFullscreenView(index) {
