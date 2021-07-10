@@ -10,7 +10,7 @@
         </div>
 
         <div class="project-photo" [class.stick-to-left]="project.descriptionOnLeftSide">
-            <img src="{{ project. mainImage }}">
+            <img src="{{ project. mainImage }}" (click)="openFullscreenView(0)">
             <div class="project-photo-title">{{ project.title }}</div>
             <div class="project-photo-year">{{ project.year }}</div>
         </div>
@@ -27,15 +27,24 @@
 
             <div class="project-other-photos">
                 <div>
-                    <img src="{{ project.projectOtherPhotos[0] }}">
+                    <img src="{{ project.projectOtherPhotos[0] }}" (click)="openFullscreenView(1)">
                 </div>
                 <div>
-                    <img src="{{ project.projectOtherPhotos[1] }}">
+                    <img src="{{ project.projectOtherPhotos[1] }}" (click)="openFullscreenView(2)">
                 </div>
                 <div>
-                    <img src="{{ project.projectOtherPhotos[2] }}">
+                    <img src="{{ project.projectOtherPhotos[2] }}" (click)="openFullscreenView(3)">
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<ng-image-fullscreen-view
+    [images]="images"
+    [imageIndex]="selectedImageIndex"
+    [show]="isFullscreenViewOpened"
+    (close)="closeFullscreenView()"
+    [paginationShow]="true"
+    [animationSpeed]="0.2">
+</ng-image-fullscreen-view>

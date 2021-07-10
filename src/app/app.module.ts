@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { NgImageFullscreenViewModule } from 'ng-image-fullscreen-view';
 
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
@@ -62,7 +63,8 @@ import { EduAndCareerItemComponent } from './main/education-and-career/edu-and-c
         lazy: false,
         showTitle: false,
         showSubtitle: false
-    })
+    }),
+    NgImageFullscreenViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]
