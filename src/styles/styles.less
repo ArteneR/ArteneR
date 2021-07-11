@@ -29,6 +29,49 @@ body {
 }
 
 
+
+/* Image Fullscreen View overrides */
+
+.ng-image-fullscreen-view {
+    z-index: 9100 !important;
+    overflow-x: hidden;
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
+
+.ng-image-fullscreen-view .prev,
+.ng-image-fullscreen-view .next,
+.ng-image-fullscreen-view .close {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    color: #FFFFFF !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px !important;
+    height: 50px !important;
+}
+
+.ng-image-fullscreen-view .close {
+    background-image: none !important;
+}
+
+.ng-image-fullscreen-view .close::before {
+    content: "X";
+    font-size: 18px;
+}
+
+.ng-image-fullscreen-view .prev:hover,
+.ng-image-fullscreen-view .next:hover,
+.ng-image-fullscreen-view .close:hover {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* end Image Fullscreen View overrides */
+
+
+
 /* Mobile & Desktop show/hide */
 .__mobile-only {
     display: initial;
