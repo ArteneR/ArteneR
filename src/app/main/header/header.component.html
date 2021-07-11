@@ -1,9 +1,7 @@
 <header>
-    <div id="header-corner-mask"></div>
     <div id="header-inner" (window:resize)="onResize($event)">
         <nav *ngIf="isNavigationVisible">
             <span id="nav-top-ornament"></span>
-            <span id="nav-top-ornament-corner-mask"></span>
             <ul>
                 <li (click)="navigateTo('top-banner')">
                     Home

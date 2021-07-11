@@ -18,13 +18,19 @@ header * {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    border-bottom-left-radius: 10px;
 }
 
-#header-corner-mask { 
-    width: 0; 
-    height: 0; 
-    border-top: 50px solid @color-primary-normal; 
-    border-left: 200px solid transparent;
+#header-inner::before { 
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    left: -20px;
+    width: 20px;
+    height: 20px;
+    border-top-right-radius: 10px;
+    box-shadow: 10px 0 0 0 @color-primary-normal;
+    content: "";
 }
 
 nav {
