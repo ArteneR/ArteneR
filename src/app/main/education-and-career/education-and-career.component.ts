@@ -36,7 +36,8 @@ export class EducationAndCareerComponent implements OnInit {
                 'contact': {
                     'phone': "",
                     'email': "https://www.titlecapture.com"
-                }
+                },
+                'image': "titlecapture.jpg"
             },
             {
                 'title': "Worked at Nokia (former Alcatel)",
@@ -63,7 +64,8 @@ export class EducationAndCareerComponent implements OnInit {
                 'contact': {
                     'phone': "",
                     'email': "https://www.facebook.com/NokiaTimisoara"
-                }
+                },
+                'image': "nokia.jpg"
             },
             {
                 'title': "Went in the USA with the Work&Travel program",
@@ -90,7 +92,8 @@ export class EducationAndCareerComponent implements OnInit {
                 'contact': {
                     'phone': "",
                     'email': "https://workandtravelsua.business.site"
-                }
+                },
+                'image': "work-and-travel.jpg"
             },
             {
                 'title': "Studied at Politehnica University of Timisoara",
@@ -115,7 +118,8 @@ export class EducationAndCareerComponent implements OnInit {
                 'contact': {
                     'phone': "",
                     'email': "https://www.upt.ro"
-                }
+                },
+                'image': "upt.jpg"
             },
             {
                 'title': "Studied at William Shakespeare highschool",
@@ -134,11 +138,12 @@ export class EducationAndCareerComponent implements OnInit {
                 'contact': {
                     'phone': "",
                     'email': "http://williamshakespeare.ro"
-                }
+                },
+                'image': "william-shakespeare.jpg"
             }
         ];
 
-        this.eduAndCareerItems = eduAndCareerItemsData.map(item => new EduAndCareerItem(item['title'], item['description'], item['period'], item['contact']));
+        this.eduAndCareerItems = eduAndCareerItemsData.map(item => new EduAndCareerItem(item['title'], item['description'], item['period'], item['contact'], item['image']));
     }
 
 }

@@ -5,6 +5,7 @@ export class EduAndCareerItem {
     constructor(public title: string,
                 public description: string,
                 public period: EduAndCareerItemPeriod,
-                public contact: EduAndCareerItemContact) {
+                public contact: EduAndCareerItemContact,
+                public image: string) {
     }
 }
