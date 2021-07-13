@@ -34,8 +34,8 @@ export class EducationAndCareerComponent implements OnInit {
                     }
                 },
                 'contact': {
-                    'phone': "0725242362",
-                    'email': "georgevici.ioan@gmail.com"
+                    'phone': "",
+                    'email': "https://www.titlecapture.com"
                 }
             },
             {
@@ -61,8 +61,8 @@ export class EducationAndCareerComponent implements OnInit {
                     }
                 },
                 'contact': {
-                    'phone': "0725242362",
-                    'email': "georgevici.ioan@gmail.com"
+                    'phone': "",
+                    'email': "https://www.facebook.com/NokiaTimisoara"
                 }
             },
             {
@@ -89,7 +89,7 @@ export class EducationAndCareerComponent implements OnInit {
                 },
                 'contact': {
                     'phone': "",
-                    'email': ""
+                    'email': "https://workandtravelsua.business.site"
                 }
             },
             {
@@ -114,7 +114,7 @@ export class EducationAndCareerComponent implements OnInit {
                 },
                 'contact': {
                     'phone': "",
-                    'email': ""
+                    'email': "https://www.upt.ro"
                 }
             },
             {
@@ -133,7 +133,7 @@ export class EducationAndCareerComponent implements OnInit {
                 },
                 'contact': {
                     'phone': "",
-                    'email': ""
+                    'email': "http://williamshakespeare.ro"
                 }
             }
         ];
