@@ -112,6 +112,8 @@
 #banner-contact-info * {
     font-size: @font-size-larger;
     word-break: break-word;
+    color: @font-color-primary;
+    text-decoration: none;
 }
 
 #banner-contact-info table tr td {
@@ -122,4 +124,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#banner-contact-info table tr td:last-child:hover {
+    text-decoration: underline;
 }

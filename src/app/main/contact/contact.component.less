@@ -81,6 +81,8 @@
 
 #contact-information table * {
     font-size: @font-size-largest;
+    color: @font-color-primary;
+    text-decoration: none;
 }
 
 #contact-information table tr td {
@@ -91,4 +93,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#contact-information table tr td:last-child:hover {
+    text-decoration: underline;
 }
