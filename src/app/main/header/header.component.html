@@ -1,25 +1,28 @@
 <header>
     <div id="header-inner" (window:resize)="onResize($event)">
+        <label (click)="setTranslationLanguage('en')">EN</label>
+        <label (click)="setTranslationLanguage('ro')">RO</label>
+
         <nav *ngIf="isNavigationVisible">
             <span id="nav-top-ornament"></span>
             <ul>
                 <li (click)="navigateTo('top-banner')">
-                    Home
+                    {{ 'header.home' | translate }}
                 </li> 
                 <li (click)="navigateTo('about-me')">
-                    About me
+                    {{ 'header.about-me' | translate }}
                 </li>
                 <li (click)="navigateTo('my-skills')">
-                    My Skills
+                    {{ 'header.my-skills' | translate }}
                 </li>
                 <li (click)="navigateTo('my-works')">
-                    My Works
+                    {{ 'header.my-works' | translate }}
                 </li>
                 <li (click)="navigateTo('education-and-career')">
-                    Education & Career
+                    {{ 'header.education-and-career' | translate }}
                 </li>
                 <li (click)="navigateTo('contact')">
-                    Contact
+                    {{ 'header.contact' | translate }}
                 </li>
             </ul>
         </nav>

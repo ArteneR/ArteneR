@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { NgImageFullscreenViewModule } from 'ng-image-fullscreen-view';
 
@@ -20,6 +23,11 @@ import { SkillSmallComponent } from './main/my-skills/skill-small/skill-small.co
 import { ProjectComponent } from './main/my-works/project/project.component';
 import { TechnologyComponent } from './main/my-works/project/technology/technology.component';
 import { EduAndCareerItemComponent } from './main/education-and-career/edu-and-career-item/edu-and-career-item.component';
+
+// AoT requires an exported function for factories
+export function HttpLoaderFactory(http: HttpClient) {
+    return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -42,6 +50,14 @@ import { EduAndCareerItemComponent } from './main/education-and-career/edu-and-c
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+        loader: {
+            provide: TranslateLoader,
+            useFactory: HttpLoaderFactory,
+            deps: [HttpClient]
+        }
+    }),
     NgCircleProgressModule.forRoot({
         percent: 100,
         radius: 90,

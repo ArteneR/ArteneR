@@ -1,7 +1,7 @@
-<app-section-title title="My Skills"></app-section-title>
+<app-section-title title="{{ 'my-skills.title' | translate }}"></app-section-title>
 
 <section id="my-skills">
-    <h1>Main Skills</h1>
+    <h1>{{ 'my-skills.main-skills' | translate }}</h1>
     <div id="main-skills">
         <app-skill title="PHP" knowledge_perc="70" image="php-logo.png"></app-skill>
         <app-skill title="Javascript" knowledge_perc="65" image="js-logo2.png"></app-skill>
@@ -9,7 +9,7 @@
         <app-skill title="Python" knowledge_perc="30" image="python-logo.png"></app-skill>
     </div>
     
-    <h1>Other Skills</h1>
+    <h1>{{ 'my-skills.other-skills' | translate }}</h1>
     <div id="other-skills">
         <app-skill-small title="NodeJS" knowledge_perc="50" image="nodejs-logo.png"></app-skill-small>
         <app-skill-small title="ReactNative" knowledge_perc="15" image="react-native-logo.png"></app-skill-small>
@@ -24,5 +24,5 @@
         <app-skill-small title="Swift" knowledge_perc="10" image="swift-logo.png"></app-skill-small>
     </div>
     
-    <h2>...and the list continues!</h2>
+    <h2>...{{ 'my-skills.and-the-list-continues' | translate }}!</h2>
 </section>

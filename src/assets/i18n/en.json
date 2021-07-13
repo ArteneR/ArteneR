@@ -1,0 +1,50 @@
+{
+    "header": {
+        "home": "Home",
+        "about-me": "About Me",
+        "my-skills": "My Skills",
+        "my-works": "My Works",
+        "education-and-career": "Education & Career",
+        "contact": "Contact"
+    },
+    "about-me": {
+        "title": "About me",
+        "hello": "Hello",
+        "there": "There!",
+        "short_introduction": "I am a young and passionate full-stack web developer. I started learning programming in high school and since then it has been my number one passion. I also have an inclination towards UI/UX design, which balances my analytical side. What I enjoy the most is building a software product from scratch, making its architecture, thinking over the important elements, taking decisions and carefully crafting it until it becomes a masterpiece.",
+        "personal-data": {
+            "title": "Personal data",
+            "fullname": "Fullname",
+            "date-of-birth": "Date of birth",
+            "birth-place": "Birth place",
+            "where-i-live": "Where I live",
+            "nationality": "Nationality",
+            "driving-licence": "Driving licence",
+            "marital-status": "Marital status",
+            "january": "January",
+            "romanian": "Romanian",
+            "yes": "Yes",
+            "single": "Single"
+        }
+    },
+    "my-skills": {
+        "title": "My skills",
+        "main-skills": "Main skills",
+        "other-skills": "Other skills",
+        "and-the-list-continues": "and the list continues"
+    },
+    "my-works": {
+        "title": "My works"
+    },
+    "education-and-career": {
+        "title": "Education & Career"
+    },
+    "contact": {
+        "title": "Contact",
+        "need-a-website": "You need a website for your business or you want to colaborate with me on a project",
+        "lets-get-in-touch": "Let's get in touch"
+    },
+    "footer": {
+        "all-rights-reserved": "All rights reserved"
+    }
+}

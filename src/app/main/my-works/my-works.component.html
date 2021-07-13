@@ -1,4 +1,4 @@
-<app-section-title title="My Works"></app-section-title>
+<app-section-title title="{{ 'my-works.title' | translate }}"></app-section-title>
     
 <section id="my-works">
     <app-project *ngFor="let project of projects" [project]="project"></app-project>

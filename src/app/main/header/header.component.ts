@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { TranslateService } from '@ngx-translate/core';
+
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -9,7 +12,7 @@ export class HeaderComponent implements OnInit {
     isNavigationVisible = true;
     currentWindowWidth = null;
 
-    constructor() { }
+    constructor(public translate: TranslateService) { }
 
     ngOnInit() {
         this.currentWindowWidth = window.innerWidth;
@@ -52,4 +55,7 @@ export class HeaderComponent implements OnInit {
         });
     }
 
+    setTranslationLanguage(language) {
+        this.translate.use(language);
+    }
 }
