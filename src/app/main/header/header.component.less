@@ -11,6 +11,32 @@ header * {
     color: @font-color-light;
 }
 
+header .change-language {
+    position: absolute;
+    top: 25px;
+    left: -70px;
+}
+
+header .change-language * {
+    color: @font-color-primary;
+}
+
+header .change-language button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+header .change-language button:hover {
+    color: darken(@font-color-primary, 7%);
+    font-weight: bold;
+}
+
+header .change-language button:disabled {
+    font-weight: bold;
+    color: @color-primary-lighter-2x;
+}
+
 #header-inner {
     background-color: @color-primary-normal;
     height: 50px;

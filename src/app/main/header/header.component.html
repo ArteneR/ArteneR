@@ -1,8 +1,11 @@
 <header>
-    <div id="header-inner" (window:resize)="onResize($event)">
-        <label (click)="setTranslationLanguage('en')">EN</label>
-        <label (click)="setTranslationLanguage('ro')">RO</label>
+    <div class="change-language">
+        <button (click)="setTranslationLanguage('en')" [disabled]="translate.currentLang === 'en'">EN</button>
+        <span class="separator">/</span>
+        <button (click)="setTranslationLanguage('ro')" [disabled]="translate.currentLang === 'ro'">RO</button>
+    </div>
 
+    <div id="header-inner" (window:resize)="onResize($event)">
         <nav *ngIf="isNavigationVisible">
             <span id="nav-top-ornament"></span>
             <ul>
@@ -26,6 +29,10 @@
                 </li>
             </ul>
         </nav>
+
+        <!-- <label (click)="setTranslationLanguage('en')">EN</label>
+        <label (click)="setTranslationLanguage('ro')">RO</label> -->
+
         <div id="header-navigation-burger-btn" (click)="triggerNavigation()">
             <div id="nav-icon" [class.open]="isNavigationVisible">
                 <span></span>

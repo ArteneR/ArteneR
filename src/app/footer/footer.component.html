@@ -9,7 +9,7 @@
         </span>
     </div>
     <div class="change-language">
-        <button class="btn btn-text" (click)="setTranslationLanguage('en')" [disabled]="translate.currentLang === 'en'">EN</button>
-        <button class="btn btn-text" (click)="setTranslationLanguage('ro')" [disabled]="translate.currentLang === 'ro'">RO</button>
+        <button (click)="setTranslationLanguage('en')" [disabled]="translate.currentLang === 'en'">EN</button>
+        <button (click)="setTranslationLanguage('ro')" [disabled]="translate.currentLang === 'ro'">RO</button>
     </div>
 </div>
