@@ -12,9 +12,10 @@ header * {
 }
 
 header .change-language {
-    position: absolute;
-    top: 25px;
-    left: -70px;
+    display: flex;
+    flex-direction: row;
+    line-height: 65px;
+    margin-right: 20px;
 }
 
 header .change-language * {
@@ -45,6 +46,7 @@ header .change-language button:disabled {
     align-items: flex-end;
     justify-content: center;
     border-bottom-left-radius: 10px;
+    position: relative;
 }
 
 #header-inner::before { 
