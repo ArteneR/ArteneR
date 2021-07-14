@@ -3,7 +3,27 @@
 #footer-inner {
     min-height: 100px;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     color: @font-color-light;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+#footer-inner > div {
+    flex: 1;
+    margin: 5px;
+}
+
+#footer-inner .copyright {
+    text-align: center;
+}
+
+#footer-inner .copyright > span:first-child {
+    white-space: nowrap;
+}
+
+#footer-inner .change-language {
+    text-align: right;
 }
