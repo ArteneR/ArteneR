@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { TranslateService } from '@ngx-translate/core';
+import * as projectsData from '../assets/data/projects.json';
 
 
 @Component({
@@ -9,38 +10,45 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.less', './app.component.mobile.less']
 })
 export class AppComponent {
-    title = 'ArteneR';
     readonly LANGS = ['en', 'ro'];
-    readonly PROJECTS = {
-        'en': {
-            'project': 'AAA'
-        },
-        'ro': {
-            'project': 'BBB'
-        }
-    };
+    readonly DEFAULT_LANG = 'en';
+    projectsData: any = projectsData;
+    title = 'ArteneR';
+    projects = {};
 
     constructor(public translate: TranslateService) {
+        this.initProjects(this.projectsData.default);
         this.initTranslations(translate);
     }
 
     initTranslations(translate): void {
+        let self = this;
         translate.addLangs(this.LANGS);
-        translate.setDefaultLang('en');
-        let projects = this.PROJECTS;
+        translate.setDefaultLang(this.DEFAULT_LANG);
         
         // Trick in order to load additional translation items
-        translate.getTranslation('ro').subscribe(
+        this.LANGS.forEach(lang => {
+            if (lang !== this.DEFAULT_LANG) {
+                translate.getTranslation(lang)
+                         .subscribe(_ => translate.setTranslation(lang, self.projects[lang], true));
+            }
+        });
+
+        translate.getTranslation(this.DEFAULT_LANG).subscribe(
             _ => { 
-                translate.setTranslation('ro', projects.ro, true);
+                translate.setTranslation(this.DEFAULT_LANG, self.projects[this.DEFAULT_LANG], true);
+                translate.use(this.DEFAULT_LANG);
             }
         );
-    
-        translate.getTranslation('en').subscribe(
-            _ => { 
-                translate.setTranslation('en', projects.en, true);
-                translate.use('en');
-            }
-        );
+    }
+
+    initProjects(projectsData): void {
+        let self = this;
+
+        this.LANGS.forEach(lang => self.projects[lang] = {});
+
+        Object.keys(projectsData).forEach(id => {
+            this.LANGS.forEach(lang => self.projects[lang][id] = projectsData[id][lang] );
+        });
     }
 }

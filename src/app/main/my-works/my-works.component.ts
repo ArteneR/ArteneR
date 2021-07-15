@@ -12,20 +12,23 @@ import * as projectsData from '../../../assets/data/projects.json';
 export class MyWorksComponent implements OnInit {
     projectsData: any = projectsData;
     projects: Array<Project> = [];
+    readonly DEFAULT_LANG = 'en';
 
     constructor() { }
 
     ngOnInit() {
-        this.projectsData.default.forEach(project => {
+        Object.keys(this.projectsData.default).forEach(id => {
+            let project = this.projectsData.default[id][this.DEFAULT_LANG];
             this.projects.push(new Project(
-                project.en.title,
-                project.en.projectLink,
-                project.en.year,
-                project.en.projectFolder,
-                project.en.description,
-                project.en.images,
-                project.en.technologiesUsed,
-                project.en.descriptionOnLeftSide
+                parseInt(id),
+                project.title,
+                project.projectLink,
+                project.year,
+                project.projectFolder,
+                project.description,
+                project.images,
+                project.technologiesUsed,
+                project.descriptionOnLeftSide
             ));
         });
     }

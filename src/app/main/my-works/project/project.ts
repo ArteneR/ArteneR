@@ -5,7 +5,8 @@ export class Project {
     defaultPhoto = "assets/images/no image available.jpg";
  
         
-    constructor(public title: string,
+    constructor(public id: number,
+                public title: string,
                 public projectLink: string,
                 public year: string,
                 public projectFolder: string,
