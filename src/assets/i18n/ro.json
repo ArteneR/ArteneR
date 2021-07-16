@@ -34,10 +34,12 @@
         "and-the-list-continues": "si lista continua"
     },
     "my-works": {
-        "title": "Lucrarile mele"
+        "title": "Lucrarile mele",
+        "technologies-tools-used": "Tehnologii/Instrumente folosite"
     },
     "education-and-career": {
-        "title": "Educatie si Cariera"
+        "title": "Educatie si Cariera",
+        "present": "Prezent"
     },
     "contact": {
         "title": "Contact",

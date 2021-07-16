@@ -34,10 +34,12 @@
         "and-the-list-continues": "and the list continues"
     },
     "my-works": {
-        "title": "My works"
+        "title": "My works",
+        "technologies-tools-used": "Technologies/Tools used"
     },
     "education-and-career": {
-        "title": "Education & Career"
+        "title": "Education & Career",
+        "present": "Present"
     },
     "contact": {
         "title": "Contact",
