@@ -35,16 +35,16 @@ export class AppComponent {
             if (lang !== this.DEFAULT_LANG) {
                 translate.getTranslation(lang)
                          .subscribe(_ => { 
-                            translate.setTranslation(lang, self.projects[lang], true) 
-                            translate.setTranslation(lang, self.eduAndCareerItems[lang], true) 
+                            translate.setTranslation(lang, { 'projects': self.projects[lang] }, true) 
+                            translate.setTranslation(lang, { 'education-and-career': self.eduAndCareerItems[lang] }, true) 
                         });
             }
         });
 
         translate.getTranslation(this.DEFAULT_LANG).subscribe(
             _ => { 
-                translate.setTranslation(this.DEFAULT_LANG, self.projects[this.DEFAULT_LANG], true);
-                translate.setTranslation(this.DEFAULT_LANG, self.eduAndCareerItems[this.DEFAULT_LANG], true);
+                translate.setTranslation(this.DEFAULT_LANG, { 'projects': self.projects[this.DEFAULT_LANG] }, true);
+                translate.setTranslation(this.DEFAULT_LANG, { 'education-and-career': self.eduAndCareerItems[this.DEFAULT_LANG] }, true);
                 translate.use(this.DEFAULT_LANG);
             }
         );

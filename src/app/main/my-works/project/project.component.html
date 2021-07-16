@@ -1,8 +1,8 @@
 <div class="project-container">
     <div class="project-inner">
         <div class="project-description-mobile-only">
-            <a href="{{ project.projectLink }}" target="_blank">{{ project.id + '.title' | translate }}</a>
-            <p>{{ project.id + '.description' | translate }}</p>
+            <a href="{{ project.projectLink }}" target="_blank">{{ 'projects.' + project.id + '.title' | translate }}</a>
+            <p>{{ 'projects.' + project.id + '.description' | translate }}</p>
             <h3>Technologies/Tools used:</h3>
             <div class="project-technologies-tools-used">
                 <app-technology *ngFor="let technologyImage of project.technologiesUsed" [image]="technologyImage"></app-technology>
@@ -11,14 +11,14 @@
 
         <div class="project-photo" [class.stick-to-left]="project.descriptionOnLeftSide">
             <img src="{{ project.mainImage }}" (click)="openFullscreenView(0)">
-            <div class="project-photo-title">{{ project.id + '.title' | translate }}</div>
+            <div class="project-photo-title">{{ 'projects.' + project.id + '.title' | translate }}</div>
             <div class="project-photo-year">{{ project.year }}</div>
         </div>
 
         <div class="project-info">
             <div class="project-description">
-                <a href="{{ project.projectLink }}" target="_blank">{{ project.id + '.title' | translate }}</a>
-                <p>{{ project.id + '.description' | translate }}</p>
+                <a href="{{ project.projectLink }}" target="_blank">{{ 'projects.' + project.id + '.title' | translate }}</a>
+                <p>{{ 'projects.' + project.id + '.description' | translate }}</p>
                 <h3>{{ 'my-works.technologies-tools-used' | translate }}:</h3>
                 <div class="project-technologies-tools-used">
                     <app-technology *ngFor="let technologyImage of project.technologiesUsed" [image]="technologyImage"></app-technology>
