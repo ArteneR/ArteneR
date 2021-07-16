@@ -1,5 +1,5 @@
 {
-    "1": {
+    "11": {
         "en": {
             "title": "Working at TitleCapture",
             "description": "Since september 2017 I have been working at TitleCapture,  a Miami, Florida based company. <br><br>My positon here is as a full stack web developer / junior devops. Being a relatively small to medium sized company, I really like that I get to work on many and diverse things, experiment with different technologies and really get to see my footprint within the company.",
@@ -19,9 +19,25 @@
             "image": "titlecapture.jpg"
         },
         "ro": {
+            "title": "Lucrez la TitleCapture",
+            "description": "Incepand cu anul 2017 lucrez la TitleCapture, o companie localizata in Miami, Florida. <br><br>Pozitia mea aici este de full stack web developer / junior devops. Fiind o companie relativ mica spre mediu, chiar imi place ca am ocazia sa lucrez pe multe si diverse lucruri, sa experimentez cu diferite tehnologii si chiar imi pot vedea amprenta in cadrul companiei.",
+            "period": {
+                "start": {
+                    "year": "2017",
+                    "month": "Sept"
+                },
+                "end": {
+                    "year": "Present"
+                }
+            },
+            "contact": {
+                "phone": "",
+                "email": "https://www.titlecapture.com"
+            },
+            "image": "titlecapture.jpg"
         }
     },
-    "2": {
+    "22": {
         "en": {
             "title": "Worked at Nokia (former Alcatel)",
             "description": "Starting with the year 2015, I have worked at Nokia as a junior software developer. <br><br>At that time, I was in the 2nd year of University and I can say that the knowledge that I gained at my workplace was of great value. <br><br>I had the chance to work on a very interesting tool with medical appointments and yearly check-up reminders for the company employees and it was satisfying to see that both the employees and the medical office personel were using the tool and found it useful.",
@@ -42,9 +58,26 @@
             "image": "nokia.jpg"
         },
         "ro": {
+            "title": "Am lucrat la Nokia (fost Alcatel)",
+            "description": "Incepand cu anul 2015, am lucrat la Nokia ca si junior software developer. <br><br>La acel timp, eram in anul al doilea de universitate si pot spune ca acele cunostinte dobandite la locul de munca au fost foarte folositoare. <br><br>Am avut ocazia sa lucrez pe un tool foarte interesant cu programari medicale si notificari privind consultul medical anual pentru angajatii firmei si a fost chiar satisfacator sa vezi ca angajatii si personalul cabinetului medical au folosit tool-ul si chiar l-au considerat a fi util.",
+            "period": {
+                "start": {
+                    "year": "2015",
+                    "month": "Dec"
+                },
+                "end": {
+                    "year": "2017",
+                    "month": "Jul"
+                }
+            },
+            "contact": {
+                "phone": "",
+                "email": "https://www.facebook.com/NokiaTimisoara"
+            },
+            "image": "nokia.jpg"
         }
     },
-    "3": {
+    "33": {
         "en": {
             "title": "Went in the USA with the Work&Travel program",
             "description": "During the summer holiday of the year 2015, I went in the USA with the Work&Travel program for students. <br><br>There, I have stayed and worked in Ocean City, Maryland, on the east coast and it was an absolutely amazing and never forgetting experience! <br><br>Just before returning home, I got the chance to visit New York City as well, the city that never sleeps (and also my dream city :D) - words can't describe how awesome the whole trip was!",
@@ -65,9 +98,26 @@
             "image": "work-and-travel.jpg"
         },
         "ro": {
+            "title": "Am fost in SUA cu programul Work&Travel",
+            "description": "In timpul vacantei de vara a anului 2015 am fost in SUA cu programul pentru studenti Work&Travel. <br><br>Acolo, am stat si am lucrat in Ocean City, Maryland, pe coasta de est si a fost o experienta absolut senzationala de neuitat! <br><br>Chiar inainte de a ma intoarce acasa, am avut ocazia sa vizitez orasul New York, orasul care nu doarme niciodata (si de asemenea, orasul viselor mele :D) - cuvintele nu pot descrie cat de senzationala a fost intreaga excursie!",
+            "period": {
+                "start": {
+                    "year": "2015",
+                    "month": "Jun"
+                },
+                "end": {
+                    "year": "2015",
+                    "month": "Sept"
+                }
+            },
+            "contact": {
+                "phone": "",
+                "email": "https://workandtravelsua.business.site"
+            },
+            "image": "work-and-travel.jpg"
         }
     },
-    "4": {
+    "44": {
         "en": {
             "title": "Studied at Politehnica University of Timisoara",
             "description": "Between 2013 and 2017 I have studied for my Bachelor's degree at Politehnica University of Timisoara. <br><br>My field of study was Computer Science, the english section. <br><br>University was a strong pillar for my education and career, as I have learned many technology related concepts which later on proved to be extremely useful at my work places.",
@@ -88,9 +138,26 @@
             "image": "upt.jpg"
         },
         "ro": {
+            "title": "Am studiat la Universitatea Politehnica Timisoara",
+            "description": "Din 2013 pana in 2017, am studiat pentru licenta la Universitatea Politehnica Timisoara. <br><br>Domeniul meu de studiu a fost Informatica, sectiunea de engleza. <br><br>Universitatea a fost un stalp important pentru educatia si cariera mea, fiindca am invatat multe concepte de tehnologie care ulterior s-au dovedit a fi extrem de folositoare la locul de munca.",
+            "period": {
+                "start": { 
+                    "year": "2013",
+                    "month": "Sept"
+                },
+                "end": {
+                    "year": "2017",
+                    "month": "Jun"
+                }
+            },
+            "contact": {
+                "phone": "",
+                "email": "https://www.upt.ro"
+            },
+            "image": "upt.jpg"
         }
     },
-    "5": {
+    "55": {
         "en": {
             "title": "Studied at William Shakespeare highschool",
             "description": "Between 2009 and 2013 I went to William Shakespeare highschool from Timisoara at the information-mathematics section.",
@@ -111,6 +178,23 @@
             "image": "william-shakespeare.jpg"
         },
         "ro": {
+            "title": "Am studiat la liceul William Shakespeare",
+            "description": "Din 2009 pana in 2013 am fost la liceul William Shakespeare din Timisoara la sectiunea de matematica-informatica.",
+            "period": {
+                "start": {
+                    "year": "2009",
+                    "month": "Sept"
+                },
+                "end": {
+                    "year": "2013",
+                    "month": "Jun"
+                }
+            },
+            "contact": {
+                "phone": "",
+                "email": "http://williamshakespeare.ro"
+            },
+            "image": "william-shakespeare.jpg"
         }
     }
 }

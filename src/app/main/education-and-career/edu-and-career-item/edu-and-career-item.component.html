@@ -25,9 +25,9 @@
         </div>
         <div class="edu-and-career-item-data-top">
             <div class="edu-and-career-item-data-top-left">
-                <h3>{{ eduAndCareerItem.title }}</h3>
+                <h3>{{ eduAndCareerItem.id + '.title' | translate }}</h3>
                 <hr>
-                <p [innerHTML]="eduAndCareerItem.description"></p>
+                <p [innerHTML]="eduAndCareerItem.id + '.description' | translate"></p>
             </div>
             <div class="edu-and-career-item-data-top-right">
                 <img src="assets/images/edu-and-career/{{ eduAndCareerItem.image }}">
