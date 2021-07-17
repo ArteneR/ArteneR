@@ -15,7 +15,7 @@
             "projectLink": "https://edenhaus.ro",
             "year": "2018",
             "projectFolder": "01",
-            "description": "O simpla aplicatie Single Page pentru afisarea proprietatilor de vanzare sau de inchiriere. Facut de la zero in AngularJS si PHP, design-ul website-ului fiind facut in intregime de catre mine. De asemenea, are si un panou Admin pentru a ii oferi administratorului sa adauge si sa editeze usor properietatile.",
+            "description": "O simplă aplicație Single Page pentru afișarea proprietăților de vânzare sau de închiriere. Făcut de la zero în AngularJS și PHP, design-ul website-ului fiind făcut în întregime de către mine. De asemenea, are și un panou Admin pentru a îi oferi administratorului să adauge și să editeze ușor proprietătile.",
             "images": ["01.jpg", "02.jpg", "03.jpg", "04.jpg", "05.jpg", "06.jpg", "07.jpg"],
             "technologiesUsed": ["angularjs.logo.png", "php-logo.png", "css-logo.png", "html-logo.png", "adobe-illustrator-logo.png"],
             "descriptionOnLeftSide": true
@@ -37,7 +37,7 @@
             "projectLink": "https://artener.ro",
             "year": "2019",
             "projectFolder": "02",
-            "description": "Acest website simplu de portofoliu a fost construit in Angular, mai mult pentru a invata conceptele de Angular si a imi inbunatati skilu-rile de dezvoltare pe frontend. Design-ul website-ului a fost creat de mine in Adobe Illustrator.",
+            "description": "Acest website simplu de portofoliu a fost construit în Angular, mai mult pentru a învăța conceptele de Angular și a îmi îmbunătăti competențele de dezvoltare pe frontend. Design-ul website-ului a fost creat de către mine în Adobe Illustrator.",
             "images": ["01.jpg", "02.jpg", "03.jpg", "04.jpg"],
             "technologiesUsed": ["angularjs.logo.png", "css-logo.png", "html-logo.png", "adobe-illustrator-logo.png"],
             "descriptionOnLeftSide": false
