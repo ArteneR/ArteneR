@@ -1,17 +1,20 @@
 {
     "header": {
-        "home": "Acasa",
+        "home": "Acasă",
         "about-me": "Despre Mine",
-        "my-skills": "Skilurile Mele",
-        "my-works": "Lucrarile Mele",
-        "education-and-career": "Educatie si Cariera",
+        "my-skills": "Competențele Mele",
+        "my-works": "Lucrările Mele",
+        "education-and-career": "Educație și Carieră",
         "contact": "Contact"
+    },
+    "top-banner": {
+        "graffiti-artist": "Artist Graffiti"
     },
     "about-me": {
         "title": "Despre mine",
         "hello": "Salutare",
         "there": "",
-        "short-introduction": "Sunt un tanar si pasionat web developer fullstack. Am inceput sa invat sa programez in liceu si de atunci a fost pasiunea mea numarul unu. De asemenea, am si o inclinatie spre deisgn de UI/UX, care balanseaza cu latura mea analitica. Ceea ce imi place cel mai mult este sa construiesc un produs software de la zero, sa ii fac arhitectura, sa ii gandesc toate elementele importante, luand decizii si mesterindul cu grija pana ce devine o capodopera.",
+        "short-introduction": "Sunt un tânăr și pasionat web developer fullstack. Am început să învăț să programez în liceu și de atunci a fost pasiunea mea numărul unu. De asemenea, am și o inclinație spre deisgn de UI/UX, care balansează cu latura mea analitică. Ceea ce îmi place cel mai mult este să construiesc un produs software de la zero, să îi fac arhitectura, să îi gândesc toate elementele importante, luând decizii și meșterindul cu grijă până ce devine o capodoperă.",
         "personal-data": {
             "title": "Date personale",
             "fullname": "Numele si Prenumele",
@@ -22,29 +25,29 @@
             "driving-licence": "Permis de conducere",
             "marital-status": "Stare civila",
             "january": "Ianuarie",
-            "romanian": "Roman",
+            "romanian": "Român",
             "yes": "Da",
             "single": "Singur"
         }
     },
     "my-skills": {
-        "title": "Skill-urile mele",
-        "main-skills": "Skil-uri de baza",
-        "other-skills": "Alte skill-uri",
+        "title": "Competențele mele",
+        "main-skills": "Competente de baza",
+        "other-skills": "Alte competente",
         "and-the-list-continues": "si lista continua"
     },
     "my-works": {
-        "title": "Lucrarile mele",
+        "title": "Lucrările mele",
         "technologies-tools-used": "Tehnologii/Instrumente folosite"
     },
     "education-and-career": {
-        "title": "Educatie si Cariera",
+        "title": "Educație și Carieră",
         "present": "Prezent"
     },
     "contact": {
         "title": "Contact",
-        "need-a-website": "Ai nevoie de un website pentru firma ta sau ai vrea sa colaborezi cu mine la un proiect",
-        "lets-get-in-touch": "Haide sa luom legatura"
+        "need-a-website": "Ai nevoie de un website pentru firma ta sau ai vrea să colaborezi cu mine la un proiect",
+        "lets-get-in-touch": "Haide sa luăm legătura"
     },
     "footer": {
         "all-rights-reserved": "Toate drepturile rezervate"
