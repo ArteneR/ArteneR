@@ -9,15 +9,17 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./header.component.less', './header.component.mobile.less']
 })
 export class HeaderComponent implements OnInit {
-    isNavigationVisible = true;
-    currentWindowWidth = null;
+    isNavigationVisible  = false;
+    currentWindowWidth   = null;
+    thresholdWindowWidth = 1000;
 
     constructor(public translate: TranslateService) { }
 
     ngOnInit() {
         this.currentWindowWidth = window.innerWidth;
-        if (this.currentWindowWidth <= 600) {
-            this.isNavigationVisible = false;
+
+        if (this.currentWindowWidth > this.thresholdWindowWidth) {
+            this.isNavigationVisible = true;
         }
     }
     
@@ -31,16 +33,14 @@ export class HeaderComponent implements OnInit {
     }
     
     closeNavigation(): void {
-        if (this.currentWindowWidth <= 600) {
+        if (this.currentWindowWidth <= this.thresholdWindowWidth) {
             this.isNavigationVisible = false;
         }
     }
     
     onResize(event) {
-        if (event.target.innerWidth != this.currentWindowWidth) {
-            this.isNavigationVisible = true;
-        }
         this.currentWindowWidth = event.target.innerWidth;
+        this.isNavigationVisible = (this.currentWindowWidth > this.thresholdWindowWidth) ? true : false;
     }
 
     scrollTo(elementId) {
