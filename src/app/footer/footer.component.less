@@ -8,43 +8,58 @@
     justify-content: space-between;
     padding: 10px;
     flex-wrap: wrap;
-}
 
-#footer-inner * {
-    color: @font-color-light;
-}
+    & * {
+        color: @font-color-light;
+    }
 
-#footer-inner > div {
-    flex: 1;
-    margin: 5px;
-}
+    & > div {
+        flex: 1;
+        margin: 5px;
+    }
 
-#footer-inner .copyright {
-    text-align: center;
-    color: @font-color-light;
-}
+    .copyright {
+        text-align: center;
+        color: @font-color-light;
 
-#footer-inner .copyright > span:first-child {
-    white-space: nowrap;
-}
+        span {
+            white-space: nowrap;
+        }
 
-#footer-inner .change-language {
-    text-align: right;
-}
+        & > span:first-child {
+            white-space: nowrap;
+        }
+    }
 
-#footer-inner .change-language button {
-    background-color: @color-primary-darker;
-    border: 1px solid @color-primary-darker-2x;
-    padding: 5px 10px;
-    cursor: pointer;
-    min-width: 40px;
-}
+    .change-language {
+        text-align: right;
 
-#footer-inner .change-language button:hover {
-    background-color: @color-primary-darker-2x;
-}
+        button {
+            background-color: @color-primary-darker;
+            border: 1px solid darken(@color-primary-darker, 5%);
+            padding: 5px 10px;
+            cursor: pointer;
+            min-width: 40px;
+            vertical-align: middle;
 
-#footer-inner .change-language button:disabled {
-    background-color: darken(@color-primary-darker, 7%);
-    color: darken(@font-color-light, 7%);
+            &:first-child {
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+
+            &:last-child {
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+
+            &:hover {
+                background-color: @color-primary-darker-2x;
+            }
+
+            &:disabled {
+                background-color: darken(@color-primary-darker, 7%);
+                color: darken(@font-color-light, 7%);
+            }
+        }
+    }
 }
