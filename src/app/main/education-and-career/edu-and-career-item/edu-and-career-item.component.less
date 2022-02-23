@@ -3,196 +3,195 @@
 .edu-and-career-item-container {
     display: flex;
     flex-direction: row;
-}
 
+    /**********  Period  **********/
 
-/**********  Period  **********/
+    .edu-and-career-item-period {
+        width: 220px;
+        margin-top: 56px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
 
-.edu-and-career-item-period {
-    width: 220px;
-    margin-top: 56px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+        & * {
+            font-size: @font-size-largest;
+        }
 
-.edu-and-career-item-period * {
-    font-size: @font-size-largest;
-}
+        .edu-and-career-item-period-start {
+            position: relative;
+            margin-right: 20px;
+        }
 
-.edu-and-career-item-period-start {
-    position: relative;
-    margin-right: 20px;
-}
+        i {
+            margin-top: 3px;
+            margin-left: 3px;
+            margin-right: 20px;
+        }
 
-.edu-and-career-item-period i {
-    margin-top: 3px;
-    margin-left: 3px;
-    margin-right: 20px;
-}
+        .edu-and-career-item-period-end {
+            position: relative;
+            margin-right: 20px;
+        }
 
-.edu-and-career-item-period-end {
-    position: relative;
-    margin-right: 20px;
-}
+        .edu-and-career-item-period-start span,
+        .edu-and-career-item-period-end span {
+            position: absolute;
+            top: 30px;
+            right: -20px;
+            background-color: @color-primary-normal;
+            color: @font-color-light;
+            font-size: @font-size-normal;
+            padding: 2px 10px;
+            border-radius: 5px;
+        }
+    }
 
-.edu-and-career-item-period-start span,
-.edu-and-career-item-period-end span {
-    position: absolute;
-    top: 30px;
-    right: -20px;
-    background-color: @color-primary-normal;
-    color: @font-color-light;
-    font-size: @font-size-normal;
-    padding: 2px 10px;
-    border-radius: 5px;
-}
+    /**********  Timeline  **********/
 
+    .edu-and-career-item-timeline {
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        position: relative;
 
-/**********  Timeline  **********/
+        .edu-and-career-item-timeline-line {
+            background-color: @color-primary-normal;
+            height: 100%;
+            width: 2px;
+        }
 
-.edu-and-career-item-timeline {
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
+        .edu-and-career-item-timeline-dot {
+            background-color: palegreen;
+            position: absolute;
+            top: 60px;
+            margin: 0 auto;
+            width: 26px;
+            height: 26px;
+            background-color: @color-primary-normal;
+            border-radius: 50%;
+            border: 2px solid @color-page-foreground;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-.edu-and-career-item-timeline-line {
-    background-color: @color-primary-normal;
-    height: 100%;
-    width: 2px;
-}
+            .edu-and-career-item-timeline-dot-inner {
+                width: 18px;
+                height: 18px;
+                border-radius: 50%;
+                background-color: @color-page-foreground;
+                border: 2px solid @color-page-foreground;
+            }
 
-.edu-and-career-item-timeline-dot {
-    background-color: palegreen;
-    position: absolute;
-    top: 60px;
-    margin: 0 auto;
-    width: 26px;
-    height: 26px;
-    background-color: @color-primary-normal;
-    border-radius: 50%;
-    border: 2px solid @color-page-foreground;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+            .edu-and-career-item-timeline-dot-inner-active {
+                background-color: @color-primary-darker-2x;
+            }
+        }
+    }
 
-.edu-and-career-item-timeline-dot-inner {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    background-color: @color-page-foreground;
-    border: 2px solid @color-page-foreground;
-}
+    /**********  Data  **********/
 
-.edu-and-career-item-timeline-dot-inner-active {
-    background-color: @color-primary-darker-2x;
-}
+    .edu-and-career-item-data {
+        min-height: 100px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        position: relative;
+        box-shadow: 0px 4px 9px 3px rgba(0, 0, 0, 0.12);
+        border-radius: 5px;
 
+        .edu-and-career-item-data-tip {
+            position: absolute;
+            top: 20px;
+            left: -26px;
+            width: 0; 
+            height: 0; 
+            border-top: 13px solid transparent; 
+            border-right: 26px solid #F2FDFA; 
+            border-bottom: 13px solid transparent;
+        }
 
-/**********  Data  **********/
+        .edu-and-career-item-data-top {
+            background-color: #F2FDFA;
+            display: flex;
+            flex-direction: row;
+            border-top-left-radius: inherit;
+            border-top-right-radius: inherit;
 
-.edu-and-career-item-data {
-    min-height: 100px;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    margin-left: 50px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    position: relative;
-}
+            .edu-and-career-item-data-top-left {
+                flex: 1;
+                padding: 16px 20px;
 
-.edu-and-career-item-data-tip {
-    position: absolute;
-    top: 20px;
-    left: -26px;
-    width: 0; 
-    height: 0; 
-    border-top: 13px solid transparent; 
-    border-right: 26px solid #F2FDFA; 
-    border-bottom: 13px solid transparent;
-}
+                & * {
+                    font-size: @font-size-larger;
+                }
 
-.edu-and-career-item-data-top {
-    background-color: #F2FDFA;
-    display: flex;
-    flex-direction: row;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
+                h3 {
+                    font-weight: bolder;
+                    color: @font-color-darkish;
+                }
 
-.edu-and-career-item-data-top-left {
-    flex: 1;
-    padding: 16px 20px;
-}
+                p {
+                    margin-top: 30px;
+                    color: @font-color-darkish;
+                    color: @font-color-primary;
+                }
+            }
+    
+            .edu-and-career-item-data-top-right {
+                background-color: #DCF7F1;
+                width: 160px;
+                height: 100%;
+                border-top-right-radius: 5px;
+                margin: 30px 20px 20px 20px;
 
-.edu-and-career-item-data-top-left * {
-    font-size: @font-size-larger;
-}
+                img {
+                    background-position: center;
+                    background-color: #DCF7F1;
+                    height: auto;
+                    width: 100%;
+                    -webkit-transform: rotate(5deg);
+                    -moz-transform: rotate(5deg);
+                    -o-transform: rotate(5deg);
+                    transform: rotate(5deg);
+                    padding: 5px;
+                    border: 1px solid #CFEAE4;
+                    box-shadow: 3px 3px 5px -3px rgba(151,151,151,0.75);
+                    -webkit-box-shadow: 3px 3px 5px -3px rgba(151,151,151,0.75);
+                    -moz-box-shadow: 3px 3px 5px -3px rgba(151,151,151,0.75);
+                }
+            }
+        }
 
-.edu-and-career-item-data-top-left h3 {
-    font-weight: bolder;
-    color: @font-color-darkish;
-}
+        .edu-and-career-item-data-bottom {
+            background-color: @color-primary-normal;
+            min-height: 50px;
+            width: 100%;
+            border-bottom-left-radius: inherit;
+            border-bottom-right-radius: inherit;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px 20px;
 
-.edu-and-career-item-data-top-left p {
-    margin-top: 30px;
-    color: @font-color-darkish;
-    color: @font-color-primary;
-}
+            & * {
+                color: @font-color-light;
+                font-size: @font-size-large;
+                vertical-align: text-top;
+                text-decoration: none;
+                word-break: break-all;
+            }
 
-.edu-and-career-item-data-top-right {
-    background-color: #DCF7F1;
-    width: 160px;
-    height: 100%;
-    border-top-right-radius: 5px;
-    margin: 30px 20px 20px 20px;
-}
+            a {
+                margin-left: 10px;
+                padding-top: 4px;
 
-.edu-and-career-item-data-top-right img {
-    background-position: center;
-    background-color: #DCF7F1;
-    height: auto;
-    width: 100%;
-    -webkit-transform: rotate(5deg);
-    -moz-transform: rotate(5deg);
-    -o-transform: rotate(5deg);
-    transform: rotate(5deg);
-    padding: 5px;
-    border: 1px solid #CFEAE4;
-    box-shadow: 3px 3px 5px -3px rgba(151,151,151,0.75);
-    -webkit-box-shadow: 3px 3px 5px -3px rgba(151,151,151,0.75);
-    -moz-box-shadow: 3px 3px 5px -3px rgba(151,151,151,0.75);
-}
-
-.edu-and-career-item-data-bottom {
-    background-color: @color-primary-normal;
-    min-height: 50px;
-    width: 100%;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.edu-and-career-item-data-bottom * {
-    color: @font-color-light;
-    font-size: @font-size-large;
-    vertical-align: text-top;
-    text-decoration: none;
-    word-break: break-all;
-}
-
-.edu-and-career-item-data-bottom a {
-    margin-left: 10px;
-    padding-top: 4px;
-}
-
-.edu-and-career-item-data-bottom a:hover {
-    text-decoration: underline;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
