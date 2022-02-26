@@ -6,7 +6,7 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.less']
+  styleUrls: ['./footer.component.less', './footer.component.mobile.less']
 })
 export class FooterComponent implements OnInit {
     constructor(public translate: TranslateService) {}
